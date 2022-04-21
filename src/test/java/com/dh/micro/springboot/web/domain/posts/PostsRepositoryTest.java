@@ -1,7 +1,7 @@
 package com.dh.micro.springboot.web.domain.posts;
 
-import com.dh.micro.springboot.domain.posts.PostRepository;
 import com.dh.micro.springboot.domain.posts.Posts;
+import com.dh.micro.springboot.domain.posts.PostsRepository;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class PostsRepositoryTest {
 
     @Autowired
-    PostRepository postsRepository;
+    PostsRepository postsRepository;
 
     @After
     public void cleanup() {
